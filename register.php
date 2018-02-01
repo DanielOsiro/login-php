@@ -8,14 +8,21 @@
 <!DOCTYPE html>
 <html lang="pt">
 
-  <form>
-    <h1>Register</h1>
+  <head>
+  </head>
 
-    E-mail: <br>
-    <input type="text" name="Login"> <br>
-    Password: <br>
-    <input type="password" name="password"> <br>
-    <input type="submit" value="submit">
-  </form>
+  <body>
+    <form class="register">
+      <h1>Register</h1>
+
+      E-mail: <br>
+      <input type="text" name="Login"> <br>
+      Password: <br>
+      <input type="password" name="password"> <br>
+      <input type="submit" value="submit">
+    </form>
+
+    <?php require_once "inc/footer.php"; ?>
+  </body>
 
 </html>
