@@ -1,12 +1,16 @@
+<?php
+  //Allow the config
+  define('__CONFIG__', true);
+  //require the config
+  require_once "config.php";
+?>
+
 <!DOCTYPE html>
 <html lang="pt">
 
-  <form>
-    Login: <br>
-    <input type="text" name="Login"> <br>
-    Password: <br>
-    <input type="password" name="Password"> <br>
-    <input type="submit" value="submit">
-  </form>
+  <?php
+    echo "<h1>Hello world!</h1>";
+    echo "<p>This is a php-login system</p>"
+  ?>
 
 </html>
