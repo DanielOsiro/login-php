@@ -7,15 +7,21 @@
 
 <!DOCTYPE html>
 <html lang="pt">
+  <head>
+  </head>
 
-  <?php
-    echo "<h1>Hello world!</h1>";
-    echo "<p>This is a php-login system</p>"
-  ?>
+  <body>
+    <?php
+      echo "<h1>Hello world!</h1>";
+      echo "<p>This is a php-login system</p>"
+    ?>
 
-  <p>
-    <a href="login.php">Login</a>
-    <a href="register.php">Register</a>
-  </p>
+    <p>
+      <a href="login.php">Login</a>
+      <a href="register.php">Register</a>
+    </p>
+
+    <?php require_once "inc/footer.php"; ?>
+  </body>
 
 </html>
