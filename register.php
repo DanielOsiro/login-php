@@ -16,10 +16,10 @@
       <h1>Register</h1>
 
       E-mail: <br>
-      <input type="text" name="Login"> <br>
+      <input type="email" required="required"> <br>
       Password: <br>
-      <input type="password" name="password"> <br>
-      <input type="submit" value="submit">
+      <input type="password" required="required"> <br>
+      <input type="submit" value="Register">
     </form>
 
     <?php require_once "inc/footer.php"; ?>

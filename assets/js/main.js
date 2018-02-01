@@ -5,12 +5,11 @@ $(document)
   var _form = $(this);
 
   var data = {
-    login: $("input[type='text']", _form).val(),
+    email: $("input[type='email']", _form).val(),
     password: $("input[type='password']", _form).val()
   }
 
   console.log(data);
-  alert(data);
 
   return false;
 })
