@@ -6,7 +6,7 @@
 
   if($_SERVER['REQUEST_METHOD'] == 'POST') {
     //Always return JSON format
-    header('Content-Type: application/json');
+    //header('Content-Type: application/json');
 
     $return = [];
 
@@ -19,8 +19,7 @@
     $findUser->execute();
 
     if($findUser->rowCount() == 1){
-      //User exists
-      //Check if the user can log in
+      //User exists, try to sign in
       $User = $findUser->fetch(PDO::FETCH_ASSOC);
 
       $user_id = (int) $User['user_id'];

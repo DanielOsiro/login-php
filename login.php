@@ -8,17 +8,31 @@
 <!DOCTYPE html>
 <html lang="pt">
 
-  <form class="js-login">
-    <h1>Login</h1>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="follow">
 
-    E-mail: <br>
-    <input type="text" name="Login"> <br>
-    Password: <br>
-    <input type="password" name="password"> <br>
+    <title>Page Title</title>
 
-    <p class="js-error" style="display: none"></p>
+    <base href="/" />
+  </head>
 
-    <input type="submit" value="submit">
-  </form>
+  <body>
+    <form class="js-login">
+      <h1>Login</h1>
+
+      E-mail: <br>
+      <input type="text" name="Login"> <br>
+      Password: <br>
+      <input type="password" name="password"> <br>
+
+      <p class="js-error" style="display: none"></p>
+
+      <input type="submit" value="submit">
+    </form>
+
+    <?php require_once "inc/footer.php"; ?>
+  </body>
 
 </html>
