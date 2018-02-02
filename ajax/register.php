@@ -16,6 +16,8 @@
 
     //Return the proper information back to javascript to redirect us
 
+    $return['redirect'] = '/index.php?this-was-a-redirect';
+
     echo json_encode ($return, JSON_PRETTY_PRINT); exit;
   } else{
     //Kill the script. Redirect user.

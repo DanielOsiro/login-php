@@ -35,6 +35,9 @@ $(document)
   .done(function ajaxDone(data) {
     //Whatever data is
     console.log(data);
+    if(data.redirect !== undefined){
+      window.location = data.redirect;
+    }
   })
   .fail(function ajaxFailed(e) {
     //This failed
