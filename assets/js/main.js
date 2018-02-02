@@ -17,14 +17,15 @@ $(document)
       return false;
   } else if (data.password.length < 11){
     _error
-      .text("Please enter a valid password")
+      .text("Please enter a password that it at least 11 characters long")
       .show();
       return false;
   }
 
+  //Assuming the code gets this far, start the ajax proccess.
+  _error.hide();
+
   console.log(data);
-  console.log(data.email.length);
-  console.log(data.password.length);
 
   return false;
 });
