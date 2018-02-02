@@ -3,7 +3,7 @@ $(document)
   event.preventDefault();
 
   var _form = $(this);
-  var _error = $("js-error", _form);
+  var _error = $(".js-error", _form);
 
   var data = {
     email: $("input[type='email']", _form).val(),
@@ -14,15 +14,17 @@ $(document)
     _error
       .text("Please enter a valid email address")
       .show();
-    return false;
-  } else if (data.password.length < 11) {
+      return false;
+  } else if (data.password.length < 11){
     _error
-      .text("Please enter a password that is at least 11 characters long")
+      .text("Please enter a valid password")
       .show();
-    return false;
+      return false;
   }
 
   console.log(data);
+  console.log(data.email.length);
+  console.log(data.password.length);
 
   return false;
 });
