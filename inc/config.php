@@ -4,6 +4,11 @@
     exit('You do not have a config file');
   }
 
+  //Sessions are always turned on
+  if(isset($_SESSION)){
+    session_start();
+  }
+
   // Our config is below
 
   // Include the DB.php file
