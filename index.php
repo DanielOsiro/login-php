@@ -12,7 +12,7 @@
 
   <body>
     <?php
-      echo "<h1>Hello world!</h1>";
+      echo "<h1>PHP login system</h1>";
       echo "<p>This is a php-login system</p>"
     ?>
 
