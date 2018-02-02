@@ -25,4 +25,4 @@ $(document)
   console.log(data);
 
   return false;
-})
+});
