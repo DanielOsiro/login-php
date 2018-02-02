@@ -12,6 +12,7 @@
   </head>
 
   <body>
+
     <form class="register">
       <h1>Register</h1>
 
@@ -19,10 +20,13 @@
       <input type="email" required="required"> <br>
       Password: <br>
       <input type="password" required="required"> <br>
+      <p class="js-error" style="display: none"></p>
+
       <input type="submit" value="Register">
     </form>
 
     <?php require_once "inc/footer.php"; ?>
+
   </body>
 
 </html>
