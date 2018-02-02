@@ -10,7 +10,7 @@ $(document)
     password: $("input[type='password']", _form).val()
   }
 
-  if(data.email.length < 17) {
+  if(data.email.length < 7) {
     _error
       .text("Please enter a valid email address")
       .show();
@@ -25,7 +25,25 @@ $(document)
   //Assuming the code gets this far, start the ajax proccess.
   _error.hide();
 
-  console.log(data);
+  $.ajax({
+    type: 'POST',
+    url: '/ajax/register.php',
+    data: dataObj,
+    dataType: 'json',
+    async: true
+  })
+  .done(function ajaxDone(data) {
+    //Whatever data is
+    console.log(data);
+  })
+  .fail(function ajaxFailed(e) {
+    //This failed
+    console.log(e);
+  })
+  .done(function ajaxAlwaysDoThis(data) {
+    //Always do
+    console.log('Always');
+  })
 
   return false;
 });
