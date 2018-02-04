@@ -4,15 +4,16 @@
   //require the config
   require_once "inc/config.php";
 
-  echo $_SESSION['user_id'] . ' is your user id.';
+  forceLogin();
 ?>
 
 <!DOCTYPE html>
 <html lang="pt">
   <head>
+    <meta charset="utf-8" />
     <title>
       <?php
-        echo 'User ' . $_SESSION['user_id'];
+        echo 'Dashboard - ' . 'User ' . $_SESSION['user_id'];
       ?>
     </title>
   </head>
