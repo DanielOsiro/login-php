@@ -13,7 +13,7 @@
 
   // Include the DB.php file
   include_once "classes/DB.php";
-  include_once "function.php";
+  include_once "functions.php";
 
   $con = DB::getConnection();
 
