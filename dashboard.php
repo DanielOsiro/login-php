@@ -24,6 +24,8 @@
       <p style="text-align: center;">Your user id is: <?php echo $_SESSION['user_id'] ?></p>
     </div>
 
+    <a href="logout.php">Logout</a>
+
     <?php require_once "inc/footer.php"; ?>
   </body>
 

@@ -29,6 +29,9 @@
       <input type="submit" value="Register">
     </form>
 
+    <hr><br><br>
+    <a href="index.php">Back</a>
+    
     <?php require_once "inc/footer.php"; ?>
 
   </body>

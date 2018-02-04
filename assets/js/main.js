@@ -17,7 +17,7 @@ $(document)
       return false;
   } else if (dataObj.password.length < 11){
     _error
-      .text("Please enter a password that it at least 11 characters long")
+      .text("Please enter a password that is at least 11 characters long")
       .show();
       return false;
   }
