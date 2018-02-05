@@ -109,3 +109,40 @@ $(document)
 
   return false;
 })
+
+$(document)
+.on("submit", "form.js-send-message", function(event){
+  event.preventDefault();
+
+  var _form = $(this);
+
+  var dataObj = {
+    message: $("textarea[type='message']", _form).val()
+  }
+
+  $.ajax({
+    type: 'POST',
+    url: '/ajax/mail.php',
+    data: dataObj,
+    dataType: 'json',
+    async: true,
+  })
+  .done(function ajaxDone(data) {
+    //Whatever data is
+    if(data.redirect !== undefined){
+      window.location = data.redirect;
+    } else if(data.error !== undefined) {
+      //Show _error
+    }
+  })
+  .fail(function ajaxFailed(e) {
+    //This failed
+    console.log(e);
+  })
+  .always(function ajaxAlwaysDoThis(data) {
+    //Always do
+    console.log('Always');
+  })
+
+  return false;
+})

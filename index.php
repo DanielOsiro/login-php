@@ -30,6 +30,8 @@
       </p>
     </div>
 
+    <a href="mail.php">Send Mail</a>
+
     <?php require_once "inc/footer.php"; ?>
   </body>
 

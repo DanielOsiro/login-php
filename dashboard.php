@@ -40,7 +40,18 @@
       <p style="text-align: center;">You registered at: <?php echo $User['reg_time']; ?></p>
     </div>
 
-    <a href="logout.php">Logout</a>
+    <div style="margin:auto; width:50%; border: 2px solid black; padding: 70px 0;">
+      <form class="js-send-message">
+        <h2>Send Message</h2>
+
+        <textarea rows="4" cols="50" type="message" form="js-send-message">
+        </textarea>
+
+        <input type="submit" value="Send">
+      </form>
+
+      <a href="logout.php" align="right">Logout</a>
+    </div>
 
     <?php require_once "inc/footer.php"; ?>
   </body>
