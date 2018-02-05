@@ -20,7 +20,10 @@ function forceDashboard() {
 }
 
 //Make sure the user does not exist
-function findUser($con, $email){
+function findUser($con, $email, $return_assoc = false){
+
+  $email = (string) $email;
+
   $findUser = $con->prepare("SELECT user_id, password FROM users WHERE email = LOWER(:email) LIMIT 1");
   $findUser->bindParam(':email', $email, PDO::PARAM_STR);
   $findUser->execute();
