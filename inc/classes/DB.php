@@ -7,13 +7,18 @@ if(!defined('__CONFIG__')) {
 
 class DB {
 
+	private $dbname = "";
+	private $user = "";
+	private $pass = "";
+	
+	
 	protected static $con;
 
 	private function __construct() {
 
 		try {
 
-			self::$con = new PDO( 'mysql:charset=utf8mb4;host=localhost;port=3306;dbname=id4509040_php_login', 'id4509040_root', 'hHjdk86%84hDbbhfj&hdh))8d' );
+			self::$con = new PDO( 'mysql:charset=utf8mb4;host=localhost;port=3306;dbname={$dbname}','{$user}','{$pass}');
 			self::$con->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 			self::$con->setAttribute( PDO::ATTR_PERSISTENT, false );
 
